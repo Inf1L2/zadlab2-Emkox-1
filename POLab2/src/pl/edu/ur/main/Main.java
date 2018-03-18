@@ -2,15 +2,25 @@ package pl.edu.ur.main;
 
 /**
  *
- * @author marcin
+ * @author Emek
  */
 public class Main {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO zad 3, 4, 6, 7
-    }
+    public static void main(String args[]){
+    int x;
+    x=24;
+    System.out.println("x = "+x);
+    System.out.print("00000000 00000000 00000000 00011000");
+    System.out.println("<-- liczbę x = 24 przesuwamy w prawo o 3");
+    System.out.print("00000000 00000000 00000000 00000011");
+    System.out.println("<-- w wyniku otrzymujemy liczbę 3");
+    System.out.println("x = "+(x>>3));
     
+    x=24;
+    System.out.println("x = "+x);
+    System.out.print("00000000 00000000 00000000 00011000");
+    System.out.println("<-- liczbę x = 24 przesuwamy w prawo o 3");
+    System.out.print("00000000 00000000 00000011 00000000");
+    System.out.println("<-- w wyniku otrzymujemy liczbę 129");
+    System.out.println("x = "+(x<<3));
+    }
 }
